@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="thanks">شكرا لك</string>
+    <string name="app_name">مجرد جافا</string>
+    <string name="name">الاسم</string>
+    <string name="chocolate">شوكولاته</string>
+    <string name="toppings">إضافات</string>
+    <string name="whipped_cream">كريمة مخفوقه</string>
+    <string name="quantity">الكمية</string>
+    <string name="order_summary">الملخص</string>
+    <string name="order">اطلب</string>
+    <string name="price">السعر</string>
+    <string name="whippedCream">كريمة مخفوقه</string>
+    <string name="JustJava_order_for">طلبك في مجرد جافا ل : </string>
+
+</resources>
