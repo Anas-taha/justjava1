@@ -56,16 +56,18 @@ public class MainActivity extends AppCompatActivity {
         numberOfCofee = numberOfCofee + 1;
         displayQuantity(numberOfCofee);
         }
+        else {
         Toast max = Toast.makeText(this,"max number",Toast.LENGTH_SHORT);
-        max.show();
+        max.show();}
     }
     public void decrement(View view) {
         if (numberOfCofee>1){
         numberOfCofee = numberOfCofee - 1;
         displayQuantity(numberOfCofee);
         }
+        else {
         Toast min = Toast.makeText(this,"min number",Toast.LENGTH_SHORT);
-        min.show();
+        min.show();}
     }
 
     private void displayQuantity(int number) {
@@ -76,13 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    /**
-     * This method displays the given text on the screen.
-     */
-    private void displayMessage(String message) {
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view_);
-        orderSummaryTextView.setText(message);
-    }
+
 
     private int calculatePrice(boolean ischecked, boolean ischecked2){
         int price = 5;
@@ -102,8 +98,8 @@ public class MainActivity extends AppCompatActivity {
 
         String message =  getString(R.string.name)+ " : "  + Name;
         message += "\n" + getString(R.string.quantity)+ " : " + numberOfCofee;
-        message += "\n" + getString(R.string.whipped_cream) + " : "+ ischecked;
-        message += "\n" + getString(R.string.chocolate) + " : " +ischecked2;
+        message += "\n" + getString(R.string.whipped_cream) + " : "+ (ischecked? getString(R.string.yes) : getString(R.string.no));
+        message += "\n" + getString(R.string.chocolate) + " : " +(ischecked2? getString(R.string.yes) : getString(R.string.no));
         message += "\n" + getString(R.string.price) + " : "+ price + "$";
         message += "\n" + getString(R.string.thanks);
         return message;

@@ -13,5 +13,7 @@
     <string name="price">السعر</string>
     <string name="whippedCream">كريمة مخفوقه</string>
     <string name="JustJava_order_for">طلبك في مجرد جافا ل : </string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
 
 </resources>
